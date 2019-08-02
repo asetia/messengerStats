@@ -45,6 +45,7 @@ def main():
         print("Messages sent: ", user_stats[key]['sent'])
         print("Laugh reax received: ", user_stats[key]['laugh_reax_received'])
         print("Laugh reax given: ", user_stats[key]['laugh_reax_given'])
+        print("Ratio of laugh reax to messages: ", user_stats[key]['laugh_reax_received'] / user_stats[key]['sent'] * 100)
         print()
 
     # print("Messages with maximum amount of reax:")
