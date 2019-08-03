@@ -7,7 +7,7 @@ def parseMessages(messages_filename_full):
     messages_filename = messages_filename_full.split('/')[-1]
     print("Loading messages file '" + messages_filename + "'...")
 
-    with open(messages_filename_full) as json_file:
+    with open(messages_filename_full, encoding="utf8") as json_file:
         data = json.load(json_file)
 
         for p in data['participants']:
